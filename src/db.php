@@ -19,7 +19,7 @@ try {
      throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
-// --- CÓDIGO PARA CRIAÇÃO DA TABELA (Executar apenas uma vez!) ---
+// --- CÓDIGO PARA CRIAÇÃO DA TABELA ---
 $sql_create_table = "
 CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
